@@ -220,7 +220,7 @@ header ul li a:hover::after {
 }
 @media (max-width:768px) {
     .events-section .container {
-        width: 300px;
+        width: 265px;
     }
 }
 .events-section .container p {
