@@ -97,7 +97,7 @@ header ul li:hover:not(:nth-child(6))::after {
     width: 50%;
 }
 header  .drop {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     color: white;
@@ -133,6 +133,9 @@ header .dropdown-menu {
     header {
         display: block;
         width: calc(100% - 60px);
+    }
+    header .drop {
+        display: flex;
     }
     header .head-nav {
         width: 100%;
