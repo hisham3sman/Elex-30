@@ -144,7 +144,7 @@ header .dropdown-menu {
         display: none;
     }
     header .head-nav ul li {
-        padding: 12px;
+        padding: 8px;
         font-size: 19px;
         position: relative;
     }
@@ -161,7 +161,16 @@ header .dropdown-menu {
         height: 2px;
         bottom: -5px;
         background-color: #ddd;
-}
+    }
+    header .dropdown-menu li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .dropdown-menu li a {
+        padding: 5px;
+        flex: 1;
+    }
 }
 /* header .links ul li:not(:last-child)::after {
     content: '';
@@ -251,6 +260,8 @@ header .dropdown-menu {
     .landing-page .text-box {
         bottom: 5%;
         margin: 10px 30px;
+        background-size: 900px;
+        animation-duration: 30s;
     }
 }
 @keyframes back {
@@ -549,8 +560,10 @@ header .dropdown-menu {
     padding: 30px;
     text-align: center;
     background-color: #2e92f9cf;
-    color: black;
+    color: white;
     box-shadow: 0 0 10px #0000007a;
+    text-shadow: 0 0 10px white;
+    text-transform: uppercase;
     font-size: 23px;
 }
 .my-sec {
