@@ -88,7 +88,7 @@ $(() => {
     let gameOne = document.querySelector('.games-cont .game.one')
 
     // date
-    let gameDate = new Date('9 july 10:00:00 2023').getTime();
+    let gameDate = new Date('10 july 10:00:00 2023').getTime();
     // console.log(gameDate)
     let countDown = setInterval(() => {
         let nowDate = new Date().getTime()
