@@ -107,9 +107,9 @@ window.onload = function () {
                 if (chosenCategory === categories[0]) {
                     score += 3
                 } else if (chosenCategory === categories[1]) {
-                    score += 5
-                } else {
                     score += 4
+                } else {
+                    score += 5
                 }
                 // score++;
                 document.querySelector('.score span').innerHTML = score;
