@@ -223,7 +223,7 @@ window.onload = function () {
                 'images/star.jpg', 'images/must.jpg', 'images/mojtaba.jpg', 'images/ayman.jpg', 'images/elshafi3.jpg'
                 , 'images/m jabeallah.jpg', "images/mutwakil.jpg", 'images/omar salah.jpg', "images/shmokh.jpg", 'images/omer waleed.jpg', 'images/m salah.jpg',
                 "images/monty.jpg", 'images/hisham.jpg', 'images/alaa.jpg', 'images/abdelwahab.jpg', 'images/safsaf.jpg', 'images/layla.jpg', 'images/malak.jpg'],
-            ['images/m rifaat.jpg', 'images/ragaei.jpg', 'images/awatif.jpg', 'images/mazen29.jpg', 'images/moh asaad.jpg', "images/mj.jpg", "images/basil.jpg"
+            ['images/m rifaat.jpg', 'images/ragaei.jpg', 'images/awatif.jpg', 'images/mazen29.jpg', 'images/m asaad.jpg', "images/mj.jpg", "images/basil.jpg"
                 , "images/twitty.jpg", 'images/albaraa.jpg', 'images/esam.jpg'],
             ["images/mahtma.jpg", 'images/newten.jpg', 'images/gifara.jpeg', 'images/nancy.jpg', 'images/tesla.jpeg', 'images/dicart.jpeg', "images/markmanson.jpg", "images/grizman.jpg", "images/mpape.jpg"
                 , "images/albokhary.png", "images/daglo.jpg", 'images/wdalamin.jpg', "images/jamesclear.jpg", 'images/michelj.jpeg', 'images/abdelhaleem.jpg', "images/bigr.jfif", 'images/alhoot.jpg'
