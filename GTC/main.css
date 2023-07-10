@@ -243,3 +243,11 @@ button:hover {
     direction: rtl;
     font-size: 1.4em;
 }
+
+.last-winners a {
+    width: 100%;
+    display: block;
+    height: 100%;
+    color: green;
+    text-decoration: none;
+}
