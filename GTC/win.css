@@ -1,0 +1,82 @@
+:root {
+    --main-backgroundColor: #2f2f2f;
+    --main-color: #fe7028;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-backgroundColor);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: absolute;
+    top: 30px;
+    font-size: 50px;
+    letter-spacing: 14px;
+}
+
+h1>span:first-child {
+    color: green;
+}
+
+h1>span:nth-child(2) {
+    color: var(--main-color);
+}
+
+.content {
+    padding: 30px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #1e0b017d;
+    background: #403e3e;
+}
+
+.content hr {
+    width: 170%;
+}
+
+.content .names>div:first-child,
+.content .scores>div:first-child {
+    font-size: 40px;
+    color: var(--main-color);
+    padding: 20px;
+}
+
+.content .names div:not(:first-child),
+.content .scores>div:not(:first-child) {
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+}
+
+.content .names>div:nth-of-type(2),
+.content .scores>div:nth-of-type(2) {
+    color: green;
+    font-weight: bold;
+}
+
+@media (max-width:768px) {
+
+    .content .names>div:first-child,
+    .content .scores>div:first-child {
+        font-size: 25px;
+    }
+
+    .content .names div:not(:first-child),
+    .content .scores>div:not(:first-child) {
+        font-size: 25px;
+    }
+}
