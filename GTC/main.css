@@ -47,6 +47,8 @@ body {
     -ms-transition: .2s;
     -o-transition: .2s;
     -webkit-filter: blur(20px);
+    user-select: none;
+    pointer-events: none;
 }
 
 .score {
