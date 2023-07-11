@@ -289,11 +289,11 @@ window.onload = function () {
         word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
         let wordWS = word;
         word = word.replace(/\s/g, "-");
-        console.log(word, wordWS);
-        console.log(categories.indexOf(chosenCategory));
-        console.log(chosenCategory.indexOf(wordWS))
-        console.log(categories[categories.indexOf(chosenCategory)][chosenCategory.indexOf(wordWS)]);
-        console.log(imagesArray[categories.indexOf(chosenCategory)])
+        // console.log(word, wordWS);       //////////////////////// P C
+        // console.log(categories.indexOf(chosenCategory));
+        // console.log(chosenCategory.indexOf(wordWS))
+        // console.log(categories[categories.indexOf(chosenCategory)][chosenCategory.indexOf(wordWS)]);
+        // console.log(imagesArray[categories.indexOf(chosenCategory)])
         img.setAttribute('src', imagesArray[categories.indexOf(chosenCategory)][chosenCategory.indexOf(wordWS)]);
         imagesArray[categories.indexOf(chosenCategory)].splice(chosenCategory.indexOf(wordWS), 1);
 
@@ -306,11 +306,11 @@ window.onload = function () {
         // set word index so we can delete it from the array and doesn't effect the hint
         wordIndex = categories[categories.indexOf(chosenCategory)].indexOf(wordWS);
 
-        console.log(chosenCategory)
+        //console.log(chosenCategory)//////////////////////// P C
         // console.log(categories[categories.indexOf(chosenCategory)].indexOf(word))
 
         categories[categories.indexOf(chosenCategory)].splice(chosenCategory.indexOf(wordWS), 1);
-        console.log(chosenCategory)
+        //console.log(chosenCategory)//////////////////////// P C
 
         reset.style.display = 'none';
         next.style.display = 'none';
@@ -323,11 +323,11 @@ window.onload = function () {
         comments();
         selectCat();
         if (chosenCategory.length === 0) {
-            console.log(categories)
+            //console.log(categories)//////////////////////// P C
             imagesArray.splice(categories.indexOf(chosenCategory), 1);
             hints.splice(categories.indexOf(chosenCategory), 1)
             categories.splice(categories.indexOf(chosenCategory), 1);
-            console.log(categories)
+            //console.log(categories) //////////////////////// P C
             // return play();
         }
         // canvas();                ///////////////////////////////////
@@ -349,8 +349,8 @@ window.onload = function () {
             // console.log(hints[catagoryIndex])
             // console.log(hints[catagoryIndex].indexOf(hints[catagoryIndex][hintIndex]));
             // delete the hint that relative to the word
-            console.log(nowHint);
-            console.log(hints[catagoryIndex])
+            // console.log(nowHint);  //////////////////////// P C
+            // console.log(hints[catagoryIndex])//////////////////////// P C
             // console.log(hints[0][0])
             checked = true;
         }
@@ -381,4 +381,28 @@ window.onload = function () {
         replay();
         checked = false;
     }
+    // disable inspect 
+    //// context menu
+    document.oncontextmenu = function (e) {
+        e.preventDefault()
+    }
+    //// buttons
+    window.onkeyup = function (e) {
+        if (e.keyCode === 123) {
+            return false
+        }
+    }
+    window.onkeydown = function (e) {
+        if (e.keyCode === 123) {
+            // console.log("it's i")
+            alert("معليش يا مكنة لكن الغش ممنوع");
+            return false;
+        } else if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.key === 'K' || e.key === 'k' || e.key === 'u' || e.key === 'U')) {
+            // console.log("No way")
+            alert("معليش يا مكنة لكن الغش ممنوع");
+            return false
+        }
+
+    }
+    // console.log('I'.charCodeAt(0))
 }
